@@ -9,6 +9,10 @@ class StoreControllerTest < ActionController::TestCase
   test "should get catalog" do
     get :catalog
     assert_response :success
+    assert_select '#columns #side a', minimum: 4
+    assert_select '#main .entry', 1
+    assert_select 'h3', 'MyString'
+    assert_select '.price', /\$[,\d]+\.\d\d/
   end
 
   test "should get about_us" do

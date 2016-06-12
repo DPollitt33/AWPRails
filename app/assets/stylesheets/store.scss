@@ -6,17 +6,17 @@
   h1 {
     margin: 0;
     padding-bottom: 0.5em;
-    font:  150% sans-serif;
+    font:  150% Helvetica;
     font-weight: 900;
-    color: #226;
-    border-bottom: 3px dotted #77d;
+    color: #800020;
+    border-bottom: 3px dotted black;
   }
 
   /* An entry in the store catalog */
   .entry {
     overflow: auto;
     margin-top: 1em;
-    border-bottom: 1px dotted #77d;
+    border-bottom: 1px dotted #800020;
     min-height: 100px;
 
     img {
@@ -35,7 +35,7 @@
       margin-left: 100px;
       margin-top: 0;
       margin-bottom: 2px;
-      color: #227;
+      color: red;
     }
 
     p, div.price_line {
