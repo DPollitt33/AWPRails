@@ -1,7 +1,5 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 ruby:
-  title: MyString
-  description: MyText
-  image_url: MyString
-  price: 9.99
+  product_id: 
+  cart_id: 

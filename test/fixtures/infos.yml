@@ -1,16 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  name: MyString
-  phone: MyString
-  email: MyString
-  address: MyString
-  intro: MyText
-  about: MyText
-  policy: MyText
-  terms: MyText
-
-two:
+ruby:
   name: MyString
   phone: MyString
   email: MyString
