@@ -15,10 +15,12 @@
   <div id="columns">
     <div id="side">
       <ul>
-        <li><a href="http://www....">Home</a></li>
-        <li><a href="http://www..../faq">Questions</a></li>
-        <li><a href="http://www..../news">News</a></li>
-        <li><a href="http://www..../contact">Contact</a></li>
+        <li><%= link_to "Home", store_index_path %></li>
+        <li><%= link_to "About Us", store_about_us_path %></li>
+        <li><%= link_to "Catalog", store_catalog_path %></li>
+        <li><%= link_to "Contact Us", store_contact_us_path %></li>
+        <li><%= link_to "Privacy Policy", store_privacy_policy_path %></li>
+        <li><%= link_to "Terms of Service", store_terms_of_service_path %></li>
       </ul>
     </div>
     <div id="main">

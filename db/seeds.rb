@@ -7,6 +7,39 @@
 # Visit http://www.pragmaticprogrammer.com/titles/rails4 for more book information.
 #---
 # encoding: utf-8
+
+#Store info
+Info.delete_all
+Info.create!(name: 'Needful Things',
+	phone: '(666) 666-6666',
+	email: 'NotTheDevil@hotmail.com',
+	address: '77 Pleasant Dr, Earth City, Replacement Dimension',
+	intro: 
+		%{<p>
+				This is the store home page. Here at the storefront, we sell things! Buy them!
+			</p>},
+	about: 
+		%{<p>
+				We here at the store front believe in the right of people to buy things <br>
+				We've been selling things for people to buy since 2004, when we bought our domain <br>
+				That's over a decade of selling things!
+			</p>},
+	policy: 
+		%{<p>
+				We sell your information to anybody who asks <br>
+				We don't have any items, so selling your information is the only way <br>
+				we stay in business <br>
+				Thanks for your IP
+			</p>},
+	terms: 
+		%{<p>
+				Anybody stumbling upon this site revokes their right to a trial by jury <br>
+				in a US court of law. All assets are transferable to Storefront.com, and <br>
+				visitors must wear dinosaur costumes to work, punishable by law
+			</p>})
+# . . .
+
+#Product info
 Product.delete_all
 Product.create!(title: 'Dimensional Teleporter Gun',
   description:

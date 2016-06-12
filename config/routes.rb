@@ -1,7 +1,19 @@
 Depot::Application.routes.draw do
-  get "store/index"
+  get 'store/index'
+
+  get 'store/catalog'
+
+  get 'store/about_us'
+
+  get 'store/contact_us'
+
+  get 'store/privacy_policy'
+
+  get 'store/terms_of_service'
+
+  resources :infos
   resources :products
-  # The priority is based upon order of creation: first created -> highest priority.
+  # The priority is based upon ohttps://www.youtube.com/watch?v=8WhwU_Zbt6Mrder of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
