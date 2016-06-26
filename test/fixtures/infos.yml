@@ -1,11 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-ruby:
-  name: MyString
-  phone: MyString
-  email: MyString
-  address: MyString
-  intro: MyText
-  about: MyText
-  policy: MyText
-  terms: MyText
+one:
+  name: MyStore
+  phone: 555-555-5555
+  email: dakota@example.com
+  address: 123 Fake Street
+  intro: Hey how's it going
+  about: We sell stuff
+  policy: No refunds
+  terms: You will not sue

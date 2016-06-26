@@ -2,7 +2,7 @@ require 'test_helper'
 
 class InfosControllerTest < ActionController::TestCase
   setup do
-    @info = infos(:ruby)
+    @info = infos(:one)
   end
 
   test "should get index" do

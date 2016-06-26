@@ -11,7 +11,7 @@ class StoreControllerTest < ActionController::TestCase
     assert_response :success
     assert_select '#columns #side a', minimum: 4
     assert_select '#main .entry', 1
-    assert_select 'h3', 'MyString'
+    assert_select 'h3', 'Sample Product'
     assert_select '.price', /\$[,\d]+\.\d\d/
   end
 
