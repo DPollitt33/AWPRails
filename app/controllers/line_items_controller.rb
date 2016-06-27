@@ -1,5 +1,6 @@
 class LineItemsController < ApplicationController
   include CurrentCart
+  skip_before_action :authorize, only: :create
   before_action :set_cart, only: [:create]
   before_action :set_line_item, only: [:show, :edit, :update, :destroy]
 
@@ -33,7 +34,7 @@ class LineItemsController < ApplicationController
       if @line_item.save
         format.html { redirect_to store_catalog_url}
         format.js { @current_item = @line_item }
-        format.json { render action: 'show',
+        format.json { render :show,
                       status: :created, location: @line_item }
       else
         format.html { render action: 'new' }
