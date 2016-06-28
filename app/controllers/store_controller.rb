@@ -7,7 +7,11 @@ class StoreController < ApplicationController
   end
 
   def catalog
-    @products = Product.order(:title)
+    if params[:set_locale]
+      redirect_to store_url(locale: params[:set_locale])
+    else
+      @products = Product.order(:title)
+    end
   end
 
   def about_us

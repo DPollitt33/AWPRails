@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class ProductsControllerTest < ActionController::TestCase
+  fixtures :products
   setup do
     @product = products(:one)
     @update = {
